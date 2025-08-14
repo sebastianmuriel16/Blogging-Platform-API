@@ -1,5 +1,23 @@
 # 📚 Blogging Platform API
 
+🚀 Running the Project
+1. Clone the Repository
+   git clone https://github.com/usuario/blogging-platform-api.git
+   cd blogging-platform-api
+
+2. Configure Database (MySQL)
+
+Edit src/main/resources/application.properties:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/blogging_platform
+spring.datasource.username=root
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
+
+3. Build and Run
+   mvn spring-boot:run
+
+
 REST API built with **Spring Boot 3** for managing blog posts (**BlogPosts**) and their tags (**Tags**).  
 It includes functionalities to create, list, update, delete, and search posts, with validations and custom exception handling.
 
